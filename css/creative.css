@@ -177,6 +177,20 @@ header.masthead {
   background-size: cover;
 }
 
+/*header.masthead::after {*/
+  /*content: "";*/
+  /*background: url("../img/draw.jpg");*/
+  /*background-position: center center;*/
+  /*background-size: cover;*/
+  /*opacity: 0.75;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*bottom: 0;*/
+  /*right: 0;*/
+  /*position: absolute;*/
+  /*z-index: -1;*/
+/*}*/
+
 header.masthead hr {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -311,6 +325,28 @@ header.masthead p {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
 
+/*Portfolio*/
+#portfolio {
+
+}
+
+#portfolio a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+.portfolio-item {
+  margin-bottom: 50px;
+}
+
+.portfolio-box img {
+  margin-bottom: 5px;
+}
+
+.portfolio-project-name {
+  /*font-weight: 700;*/
+  font-size: 1.25rem;
+}
+
 /*Skills*/
 
 #skills ul {
@@ -320,6 +356,7 @@ header.masthead p {
 }
 
 /*About Me*/
+
 .about-section {
   margin: 0 0 10px 0;
   line-height: 1.2;
@@ -338,9 +375,38 @@ header.masthead p {
   padding-left: 25px;
 }
 
+.about-title {
+  font-size: 1.5rem;
+}
+
+.about-content {
+  margin-top: 20px;
+}
+
+.about-content p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  /* Adds a hyphen where the word breaks */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
 
 /*portfolio pages*/
-.portfolio article p {
+
+.portfolio-page header.portfolio-cuiguideline {
+  background-image: url("../img/portfolio/cui-guideline.jpg");
+
+}
+
+/*.portfolio header {*/
+  /*color: #F05F40;*/
+/*}*/
+
+
+.portfolio-page article p {
   line-height: 1.5;
   margin: 30px 0;
 }
@@ -376,24 +442,24 @@ header.masthead p {
 /*}*/
 
 @media (min-width: 992px) {
-  .portfolio header.masthead {
-    height: 40vh;
+  .portfolio-page header.masthead {
+    height: 30vh;
     min-height: 150px;
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 20px;
   }
-  .portfolio header.masthead h1 {
+  .portfolio-page header.masthead h1 {
     font-size: 3rem;
   }
 }
 
-.portfolio blockquote {
+.portfolio-page blockquote {
   font-style: italic;
   color: #868e96;
 }
 
-.portfolio .caption {
+.portfolio-page .caption {
   font-size: 14px;
   font-style: italic;
   display: block;
@@ -410,7 +476,11 @@ header.masthead p {
   /*}*/
 /*}*/
 
-.portfolio .section-heading {
+.portfolio-page .section-heading {
   margin-top: 50px;
   font-weight: 700;
 }
+
+/*.portfolio-page .portfolio-page-project-name h1 {*/
+  /*font-size: 3rem;*/
+/*}*/
